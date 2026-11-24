@@ -44,7 +44,7 @@ The CI build follows this sequence:
 The workflow is `.github/workflows/release.yml`.
 
 - Pushes to `feature/theo-video-studio-branding` start a build.
-- A manual `workflow_dispatch` run builds the version in the Android `gradle.properties` file.
+- After this branch is merged into the repository's default branch, a manual `workflow_dispatch` run is available from Actions and builds the version in Android `gradle.properties`.
 - Successful runs upload an artifact named `theo-video-studio-apk`.
 - Version-tag builds require a configured release keystore and create a draft GitHub release.
 - Manual branch builds without release secrets use the debug signing key. They are for testing, not public release.
