@@ -21,5 +21,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "CapCraft"
+rootProject.name = "THEO-VIDEO-STUDIO"
 include(":app")
